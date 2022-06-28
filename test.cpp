@@ -19,7 +19,7 @@ TEST_CASE("detect set of values  from  specified range within input array of int
 
 TEST_CASE("Convert a reading to Ampere with error condition check") {
   
-   int reading=1146;
+   float reading=1146;
    REQUIRE(ampConverter(reading) == 3);
    
    reading=4095;
