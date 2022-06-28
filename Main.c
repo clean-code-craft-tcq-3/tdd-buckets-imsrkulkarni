@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-
+#include <math.h>
 bool checkInRange(int val,int startRange ,int endRange)
 {
   if((val >= startRange) && (val <= endRange))
@@ -36,5 +36,5 @@ int ampConverter(int reading)
 {
   int amps=0;
   amps=if(reading > MAX_TEMP) ? -1 : MAX_TEMP * reading / MAX_READING_LIMIT;
-  return amps;     
+  return round(amps);     
 }
