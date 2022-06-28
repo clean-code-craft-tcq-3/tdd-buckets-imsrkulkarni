@@ -33,7 +33,7 @@ int getNoOfRValuesInRange(int* array_p,int startRange ,int endRange)
   printf("\n%d-%d,%d",startRange,endRange,valueInRange);
   return valueInRange;
 }
-int ampConverter(int reading)
+int ampConverter(float reading)
 {
   float amps=0.0;
   amps=(reading > MAX_READING_LIMIT) ? -1 : (MAX_TEMP * reading / MAX_READING_LIMIT);
