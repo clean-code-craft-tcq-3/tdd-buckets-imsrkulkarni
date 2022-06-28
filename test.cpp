@@ -15,3 +15,14 @@ TEST_CASE("detect set of values  from  specified range within input array of int
    REQUIRE(getNoOfRValuesInRange(sampleArray,startRangeValue,endRangeValue) == 3);
    
 }
+
+
+TEST_CASE("Convert a reading to Ampere with error condition check") {
+  
+   int reading=1146;
+   REQUIRE(ampConverter(reading) == 3);
+   
+   reading=4095;
+   REQUIRE(ampConverter(reading) == -1);
+   
+}
