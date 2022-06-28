@@ -32,3 +32,9 @@ int getNoOfRValuesInRange(int* array_p,int startRange ,int endRange)
   printf("\n%d-%d,%d",startRange,endRange,valueInRange);
   return valueInRange;
 }
+int ampConverter(int reading)
+{
+  int amps=0;
+  amps=if(reading > MAX_TEMP) ? -1 : MAX_TEMP * reading / MAX_READING_LIMIT;
+  return amps;     
+}
