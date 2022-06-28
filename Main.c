@@ -35,6 +35,6 @@ int getNoOfRValuesInRange(int* array_p,int startRange ,int endRange)
 int ampConverter(int reading)
 {
   int amps=0;
-  amps=if(reading > MAX_TEMP) ? -1 : (MAX_TEMP * reading / MAX_READING_LIMIT);
+  amps=(reading > MAX_TEMP) ? -1 : (MAX_TEMP * reading / MAX_READING_LIMIT);
   return round(amps);     
 }
