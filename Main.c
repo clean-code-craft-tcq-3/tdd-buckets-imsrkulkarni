@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-#include <math.h>
 
 bool checkInRange(int val,int startRange ,int endRange)
 {
@@ -32,10 +31,4 @@ int getNoOfRValuesInRange(int* array_p,int startRange ,int endRange)
   }
   printf("\n%d-%d,%d",startRange,endRange,valueInRange);
   return valueInRange;
-}
-int ampConverter(float reading)
-{
-  float amps=0.0;
-  amps=(reading > MAX_READING_LIMIT) ? -1 : (MAX_TEMP * reading / MAX_READING_LIMIT);
-  return (round(amps));     
 }
