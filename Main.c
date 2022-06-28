@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 #include <math.h>
+
 bool checkInRange(int val,int startRange ,int endRange)
 {
   if((val >= startRange) && (val <= endRange))
@@ -34,7 +35,7 @@ int getNoOfRValuesInRange(int* array_p,int startRange ,int endRange)
 }
 int ampConverter(int reading)
 {
-  int amps=0;
+  float amps=0.0;
   amps=(reading > MAX_TEMP) ? -1 : (MAX_TEMP * reading / MAX_READING_LIMIT);
-  return round(amps);     
+  return (round(amps));     
 }
